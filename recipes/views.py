@@ -6,8 +6,4 @@ def home(request):
         'name': 'João Oliveira',
     })
 
-def sobre(request):
-    return render(request, 'temp.html')
 
-def contato(request):
-    return HttpResponse('contato')
