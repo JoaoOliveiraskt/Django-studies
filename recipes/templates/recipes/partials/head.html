@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Oliveira's recipes</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+      
+    * {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      body{
+        font-size: 1.6rem;
+        font-family: 'Inter', sans-serif;
+        /*background: #222;*/
+        background: #d0d0d0;
+        color: #353535;
+        letter-spacing: .3px;
+      }
+      .container {
+        max-width: 85rem;
+        margin: 0 auto;
+        padding: 1.8rem 2rem;
+      }
+      
+      .main-header-container {
+        background-color: #13141f;
+      }
+      
+      .main-logo {
+        text-decoration: none;
+        font-size: 2.3rem;
+        color: #fff;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        margin: 0 auto;
+      }
+      .main-logo-icon {
+        margin: 0 2rem 0 0;
+      }
+
+      .search-form {
+        border: .13rem solid #222;
+        border-radius: 2rem;
+        max-width: 50rem;
+        margin: 0 auto;
+        position: relative;
+        transition: all .2s ease-in-out;
+      }
+
+      .search-form:focus-within {
+        border-color: #1d74ff;
+        background: #fff;
+      }
+
+      .search-input, .search-bttn {
+        border: none;
+        background: none;
+        outline: none;
+        padding: .6rem;
+      }
+      .search-input {
+        width: 100%;
+        font-size: 1.4rem;
+        padding-right: 3rem;
+        border-radius: 2rem;
+      }
+      .search-bttn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+      }
+
+      .search-form:focus-within .search-bttn {
+        color: #1d74ff;
+      }
+
+      .main-content {
+        padding-top: 0;
+      }
+      .main-content-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        gap: 4rem;
+      }
+      .recipe {
+        background: #fff;
+        box-shadow: -5px 5px 15px rgba(0,0,0,.2);
+        transform: scale(1);
+        transition: all .2s ease-in-out;
+      }
+
+      .recipe img {
+        max-width: 100%;
+      }
+
+      .recipe-list-item {
+        max-width: 32rem;
+      } 
+
+      .recipe-list-item:hover {
+        transform: scale(1.01);
+        box-shadow: -5px 5px 15px rgba(0,0,0,.3);
+      }
+
+      .recipe-title-container {
+        font-size: 16px;
+        padding: 1.5rem;
+      }
+
+      .recipe-author {
+        font-size: 12px;
+        padding: 0 1.5rem;
+      }
+      
+      .recipe-content {
+          padding: 1.5rem;
+          font-size: 11px;
+        }
+        
+        .recipe-author-item {
+          color: #5e5e5e;
+        }
+
+        .recipe-author a {
+            color: #1d74ff;
+            text-decoration: none;
+            transition: all .2s ease-in-out;
+        }
+        .recipe-author a:hover {
+            color: #13141f;
+        }
+    </style>
+</head>
